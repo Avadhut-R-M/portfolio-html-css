@@ -1,0 +1,363 @@
+*{ 
+    margin:0;
+    padding:0;
+}
+body{
+	font-family: poppins;
+}
+.dropdown-menu{
+	display: none;
+}
+.dropdown-menu button{
+	font-size: 1.2em;
+}
+.nav:hover .menu-content{
+	display: flex;
+} 
+nav ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#main{
+	width:100%;
+	height:100vh;
+	position: relative;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	position: fixed;
+	width:100%;
+	z-index: 1;
+	background-color: #f39d9d;
+}
+nav:hover{
+    background-color: rgb(167, 218, 241);
+}
+.small-menu{
+	display: none;
+}
+nav ul{
+	display: flex;    
+}
+nav ul li a{
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#2b2c2c;
+    letter-spacing: 2px;
+}
+nav ul li a:hover{
+	background-color: #f7ef05;
+    color:#f52308;
+    font-size: 1.6rem;
+	box-shadow: 5px 10px 30px rgba(64,198,196,0.3);
+	transition: all ease 0.2s;
+}
+.model img{
+    width:100%;
+    height: 100%;
+	object-fit: contain;
+	border-radius: 100%;
+}
+.model{
+    width:50%;
+    height: 80vh;
+    align-items: center;
+    align-self: center;
+
+}
+.content{
+	padding-top: 2em;
+	height: 100vh;
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+	transform: translate(-50%,-50%);
+	background: linear-gradient(135deg,rgb(221, 190, 12),rgb(234, 234, 236));
+}
+.main-text{
+	width:100%;
+}
+.main-text h1{
+    font-size: 3.5rem;
+    color:#1c3548;
+	margin:0px 0px 10px 0px;
+	padding-left: 0.5em;
+    line-height: 60px;
+}
+.main-text p{
+	color:#222222;
+	padding-left: 0.5em;
+
+}
+#skills{
+	display: flex;
+	flex-direction: column;
+	row-gap: 2em;
+    justify-content: space-around;
+    align-items: center;
+	padding:2em;
+	margin:auto auto 50px auto;
+	background: linear-gradient(135deg,rgb(221, 190, 12),rgb(234, 234, 236));
+
+}
+.skill-content{
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	column-gap: 1em;
+}
+.skill-items{
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+	flex: 1;
+	border: #333333;
+	background: linear-gradient(45deg,rgb(192, 192, 223),rgb(238, 175, 175));
+	border-style: solid;
+
+}
+.skill-items:hover{
+	background: none;
+}
+.skill-items h3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.skill-items p{
+	padding-top: 1em;
+}
+.skill-items img{
+	display: flex;
+	border-radius: 20%;
+	align-items: center;
+	height: 50%;
+	width: 50%;
+}
+#all-projects{
+	display: flex;
+	justify-content: center;
+	padding: 2em;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(135deg,rgb(221, 190, 12),rgb(234, 234, 236));
+
+}
+.all-projects .main-heading{
+	margin-top: 4em;
+}
+.projects{
+	display: flex;
+	flex-direction: row;
+	column-gap: 2em;
+	justify-content: space-around;
+	margin: 2em;
+	/* height: 80vh; */
+	align-items: initial;
+	column-gap: 5em;
+	
+}
+.project{
+	display: flex;
+	align-items: flex-start;
+	border: #1c3548;
+	border-style: solid;
+	border-width: 0.5em;
+	padding: 2em;
+	flex-direction: column;
+	justify-content: space-around;
+	row-gap: 0;
+	background: linear-gradient(45deg,rgb(192, 192, 223),rgb(238, 175, 175));
+}
+.project:hover{
+	background: none;
+}
+.project img{
+	width: 50%;
+	height: 50%;
+}
+#education{
+	margin-top: 2em;
+	background: linear-gradient(135deg,rgb(221, 190, 12),rgb(234, 234, 236));
+	display: flex;
+	flex-direction: column;
+	row-gap: 2em;
+	width: 100%;
+}
+.education_content{
+	display: flex;
+	justify-content: center;
+	column-gap: 2em;
+	justify-content: space-around;
+	margin: 2em;
+	flex-basis: 100%;
+	
+}
+.education_content div{
+	padding: 2em;
+	border: #5f5f5f;
+	border-style: solid;
+	background: linear-gradient(45deg,rgb(192, 192, 223),rgb(238, 175, 175));
+
+}
+.education_content div  ul{
+	line-height: 150%;
+	
+}
+.education_content div:hover{
+	border-radius: 10%;
+	background-color: #f7ef05;
+	border-color: brown;
+	border-width: 1em;
+	background: none;
+}
+.edu_detail h4{
+	justify-content: center;
+	display: flex;
+
+}
+#hobbies{
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2em;	
+	background: linear-gradient(135deg,rgb(221, 190, 12),rgb(234, 234, 236));
+
+}
+.hobbies-content{
+	display: flex;
+	padding: 2em;
+	column-gap: 1em;
+}
+.hobbies-content img{
+	width: 100%;
+	height: 100%;
+}
+.hobbies-item{
+	display: flex;
+	width: 100%;
+	height: 60vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap:2em;
+	padding:2em;
+	border: #585b5b;
+	border-style: solid;
+	background: linear-gradient(45deg,rgb(192, 192, 223),rgb(238, 175, 175));
+}
+
+.main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+.main-heading h1{
+	padding: 1em;
+	font-size: 3rem;
+	color: crimson;
+}
+footer{
+	display:flex;
+	flex-direction: column;
+	padding: 20px;
+	margin-top:10px ;
+    justify-content: space-around;
+    border-top: 1px solid rgba(232,232,232,0.5);
+    background-color:#FFFFFF;
+}
+footer{
+	background: linear-gradient(35deg,rgb(240, 173, 173),rgb(138, 138, 241));
+}
+.footer-item{
+	width: 30%;
+	height: 3em;
+	background-color: black;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	border-width: 0.5em;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+.footer-item:hover{
+	background-color: rgb(107, 147, 233);
+	border-color: black;
+}
+.footer-item:hover a{
+	color: black;
+}
+.footer-item a{
+	color: white;
+	column-gap: 1em;
+	align-items: center;
+	align-self: center;
+}
+.contact{
+	display: flex;
+	column-gap: 2em;
+}
+@media(max-width:600px){
+	.dropdown-menu{
+		display: block;
+	}
+	.dropdown-menu ul{
+		display: none;
+	}
+	.menu{
+		display: none;
+	}
+	.content{
+		flex-direction: column;
+	}
+	.skill-content{
+		flex-direction: column;
+		width: 80%;
+		row-gap: 1em;
+		padding: 1em;
+	}
+	.all-projects{
+		width: fit-content;
+	}
+	.projects, .education_content, .contact{
+		flex-direction: column;
+		row-gap: 1em;
+	}
+	.education{
+		width: fit-content;
+	}
+	.hobbies-content{
+		flex-direction: column;
+		width: 60%;
+		row-gap: 1em;
+	}
+	#main-sec{
+		display: flex;
+		flex-direction: column;
+		row-gap: 3em;
+	}
+	nav{
+		background-color: transparent;
+	}
+	.dropdown-menu:hover ul, .dropdown-menu:focus ul {
+		top:0px;
+		display:block;
+		background-color: rgb(216, 151, 151);
+	}
+}
